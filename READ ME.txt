@@ -7,15 +7,15 @@ The main file is topicDetection/Main.java. It takes three arguments as input:
 
 1- inputFile: 
 	- If inputFile is a directory, all documents in that directory will be loaded.
-	- If inputFile is a file, there should be one document per line. Each line should have two columns separated with a tab charachter. The first column is the document id and the second column is the content of the document.
-	* If you want to provide your own feature vector, you can use the first input option (input is a dicrectory). When we process the documents in the dicrectory, if a document file name is ending with ".keywords", it will be considered as a feature vector file (Look input format section). Any other extensions will be considered as text files.
+	- If inputFile is a file, there should be one document per line. Each line should have two columns separated with a tab character. The first column is the document id and the second column is the content of the document.
+	* If you want to provide your own feature vector, you can use the first input option (input is a directory). When we process the documents in the directory, if a document file name is ending with ".keywords", it will be considered as a feature vector file (Look input format section). Any other extensions will be considered as text files.
 
 2- outputFile: This is the name of the output file which will contains the topics, topics features and assigned documents
 
 3- configFile: This is the name of the file that specifies the parameters of KeyGraph algorithm (Look config file section).   
 
 === INPUT FORMAT =====================
-KeGrpah accepts two types of input: Text and Keyword files. Keyword files can be used if you need to perform your own feature extraction. The type of input file/document will be determined from its extension.   
+KeyGraph accepts two types of input: Text and Keyword files. Keyword files can be used if you need to perform your own feature extraction. The type of input file/document will be determined from its extension.   
 1-Keyword file: if a document file name is ending with ".keywords", it will be considered as a keyword file. Each line in keyword file includes one keyword in the following format:
 keyword==term_frequency
 
