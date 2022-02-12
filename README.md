@@ -1,6 +1,7 @@
 # keygraph
 
 == HOW TO RUN=========================
+
 Command:
 java topicDetection/Main inputFile  outputFile configFile
 
@@ -49,6 +50,7 @@ KEYGRAPH_EDGES:	node1_id:node1_labelBaseForm:node1_label-node2_id:node2_labelBas
 
 
 === CONFIG FILE ======================
+
 Config file is located under config directory. We also provided 3 recommended config files for Blogs, news, and tweets.
 
 //*input documents and features --------
@@ -77,6 +79,7 @@ CLUSTER_INTERSECT_MIN = .15;
 TOPIC_MIN_SIZE = 5; 
 
 == IGNORE THESE PROPERTIES =================
+
 KEYWORDS_1_ENABLE = true; //***NOT USED***
 KEYWORDS_2_ENABLE = true; //***NOT USED***
 TEXT_ENABLE = true; //***NOT USED***
