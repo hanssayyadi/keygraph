@@ -17,6 +17,7 @@ The main file is topicDetection/Main.java. It takes three arguments as input:
 3- configFile: This is the name of the file that specifies the parameters of KeyGraph algorithm (Look config file section).   
 
 === INPUT FORMAT =====================
+
 KeyGraph accepts two types of input: Text and Keyword files. Keyword files can be used if you need to perform your own feature extraction. The type of input file/document will be determined from its extension.   
 1-Keyword file: if a document file name is ending with ".keywords", it will be considered as a keyword file. Each line in keyword file includes one keyword in the following format:
 keyword==term_frequency
@@ -24,6 +25,7 @@ keyword==term_frequency
 2-Text file: if a document file name is NOT ending with ".keywords", it will be considered as a text file. A text file includes the content of the document.
 
 === OUTPUT FORMAT ====================
+
 Each topic is presented in 4 lines. Each topic is separated from the next topic with a empty line:
 -First line includes the list of keywords
 -Second line includes the list of documents
